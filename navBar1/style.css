@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh; /*-- size of the nav color bar --*/
+    background-color: #5d4954;
+    font-family: 'Poppins', sans-serif;
+}
+.logo { /*style the nav*/
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.nav-links {
+   /* background-color: red; */ /*-- use this to determine width of the nav bar links flex-box --*/
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li{
+    list-style: none; /*--  remove bullet points on li, similar to text-decoration: none; for a tags --*/
+}
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none; /*--removes underline from anchor tags, so this is placed when targeting an a tag--*/
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
