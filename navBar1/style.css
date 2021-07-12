@@ -43,6 +43,7 @@ nav {
     height: 2px;
     margin: 5px;
     border-radius: 3px;
+    transition: all 0.3s ease; /*-- transition for burger div --*/
 }
 @media screen and (max-width:1024px) { /*-- adjusts width when the screen size is roughly tablet sized --*/
     .nav-links {
@@ -90,4 +91,13 @@ nav {
     }
 }
 
-/**/
+/*-- burger animation --*/
+.toggle .line1{
+    transform:  rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform:  rotate(45deg) translate(-5px,-6px);
+}
