@@ -21,7 +21,7 @@ nav {
    /* background-color: red; */ /*-- use this to determine width of the nav bar links flex-box --*/
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 30%; /*-- increasing width here from 30 --> 40 to space while in media mode --*/
 }
 .nav-links li{
     list-style: none; /*--  remove bullet points on li, similar to text-decoration: none; for a tags --*/
@@ -31,5 +31,61 @@ nav {
     text-decoration: none; /*--removes underline from anchor tags, so this is placed when targeting an a tag--*/
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
+}
+.burger { /*-- hides burger menu, since this is intended to be used for mobile sizing --*/
+    display: none;
+    cursor: pointer; /*-- sets the cursor to a pointing hand when hovering over the burger stack --*/
+}
+.burger div {
+    background-color: rgb(226, 226, 226);
+    width: 25px;
+    height: 2px;
+    margin: 5px;
+    border-radius: 3px;
+}
+@media screen and (max-width:1024px) { /*-- adjusts width when the screen size is roughly tablet sized --*/
+    .nav-links {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden; /*-- this hides the side menu so that it is not scrollable --*/
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5d4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%; /*-- width of the side menu block --*/
+        transform: translateX(100%); /*-- sets the side menu off to the side, but it is scrollable, so you can scroll to the right and see that sidebar menu --*/
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0; /*-- sets the starting opacity of the side menu items to 0, so that an animation can be used to fade them in --*/
+    }
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
