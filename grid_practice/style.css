@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    background-color: lightgray;
+    display: grid;
+    grid-row-gap: 10px;
+    justify-items: center; 
+    font-size: 40px;
+    width: 100%;
+    height: 100vh;
+    /* grid-template-areas: 
+    "header1 header2"
+    "body1 body2"
+    "footer1 footer2"; */
+    
+}
+.item1 {
+    background-color: yellow;
+    width: 50%;
+}
+.item2 {
+    background-color: beige;
+    width: 50%;
+}
+.item3 {
+    background-color: cadetblue;
+    width: 50%;
+}
+.item4 {
+    background-color: crimson;
+    width: 50%;
+}
