@@ -1,0 +1,14 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.task-2 container {
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: repeat(12, 1fr);
+}
+.task-2 .item-1 {
+    grid-column-start: 2;
+    grid-column-end: span 4;
+}
