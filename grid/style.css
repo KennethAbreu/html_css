@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+} 
+.container {
+    display: grid;
+    background-color: gray;
+    grid-template-columns: 100px 100px 100px 100px;
+    
+}
+.line1 {
+    background-color: yellow;
+}
+.line2 {
+    background-color: green;
+}
+.line3 {
+    background-color:chocolate;
+}
+.line4 {
+    background-color: darkcyan;
+}
