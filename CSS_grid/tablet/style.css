@@ -1,0 +1,65 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    display: grid;
+  height: 100vh;
+
+  grid-template-rows: auto auto 1fr auto auto auto;
+  gap: 24px;
+}
+.item {
+    padding: 8px;
+    border: 4px solid tomato;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.25);
+}
+
+
+/*-- Tablet --*/
+@media (min-width: 720px) {
+    .container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto 1fr auto;
+    }
+    .header {
+        grid-column: 1 / span 12;
+    }
+    .nav {
+        grid-column: 1 / span 12;
+    }
+    .main {
+        grid-column: 3 /span 10;
+    }
+    .sidebar {
+        grid-column: 1 /span 2;
+        grid-row: 3;  /* find out how this affects the sidebar placement - apparently because main comes before sidebar in DOM --*/
+    }
+    .ads {
+        grid-column: 1 / span 2;
+    }
+    .footer {
+        grid-column: 3 / span 10;
+    }
+}
+
+/*-- Desktop --*/
+@media (min-width: 1020px) {
+    .nav {
+        grid-column: 3 / span 8;
+    }
+    .main {
+        grid-column: 3 / span 8;
+    }
+    .sidebar {
+        grid-row: 2 / 4;
+    }
+    .ads {
+        grid-column: 11 /span 2;
+        grid-row: 2 / 4;
+    }
+    .footer {
+        grid-column: 1 / span 12;
+    }
+}
