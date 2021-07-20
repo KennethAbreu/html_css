@@ -11,9 +11,9 @@
 #main {
     display: grid;
     height: 100vh;
-    grid-gap: 20px 30px;
+    grid-gap: 10px 20px;
     grid-template-columns: repeat(4 , 1fr);
-    /*grid-template-row:;*/
+    grid-template-rows: auto;
     
 
 }
@@ -23,7 +23,13 @@
     justify-self: center;
 }
 #description {
-    grid-column: 1 / 4;
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    justify-self: center;
+}
+#img-div {
+    grid-column: 1 / span 4;
+    grid-row: 3;
 }
 #image {
     height: auto;
@@ -32,4 +38,12 @@
     width: 100%;
     max-width: 625px;
     display: block;
+}
+#img-caption {
+    font-size: 12px;
+    justify-self: center;
+}
+#tribute-info {
+    grid-column: 1 / span 4;
+    grid-row: 4;
 }
