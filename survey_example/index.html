@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="form-content">
+            <form id="survey-form">
+
+                <label for="name" id="name-label">Name</label>
+                    <input id="name" type="text" required placeholder="Enter your name" />
+                
+                <label for="email" id="email-label">Email</label>
+                    <input id="email" type="email" required placeholder="Enter your email" />
+                
+                <label for="number" id="number-label">Rating from 1-10</label>
+                    <input id="number" type="number" min="1" max="10" required placeholder="Enter your rating" />
+
+                <!-- Drop Down Menu -->
+
+                <label for="dropdown">Which Option Best Describes Your Current Role?</label>
+                <select id="dropdown"> <!--Transforms into a drop down menu-->
+                    <option value="student">Student</option>
+                    <option value="full-time-learner">Full Time Learner</option>
+                    <option value="full-time-job">Full Time Job</option>
+                    <option value="prefer-not-to-say">Prefer Not to Say</option>
+                    <option value="other">Other</option>
+                </select>
+                        <!-- Multi-choice single answer -->
+                <fieldset> <!--Seems to create a box that the multiple choice form item can live in-->
+                    <legend>Is Following This Tutorial Helpful?</legend>
+                    
+                    <input type="radio" name="recommend" id="definitely" value="definitely"/>
+                        <label for ="definitely">Definitely</label>
+                            <br>
+                    <input type="radio" name="recommend" id="maybe" value="maybe" />
+                        <label for="maybe">Maybe</label>
+                            <br>
+                    <input type="radio" name="recommend" id="meh" value="meh" />
+                            <label for="meh">Meh</label>
+                </fieldset>
+
+                <!-- Multiple Choice Checkboxes -->
+            <p>What would you like to see improved?</p>
+                <input type="checkbox" id="video-length" name="video-length" value="video-length">
+                    <label for="video-length">Video Length</label>
+                        <br>
+                <input type="checkbox" id="content-quality" name="content-quality" value="content-quality">
+                    <label for="content-quality">Content Quality</label>
+                        <br>
+                <input type="checkbox" id="more-videos" name="more-videos" value="more-videos">
+                    <label for="more-videos">Add More Videos</label>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
