@@ -1,0 +1,140 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.main {
+    background-image: url(https://i.pinimg.com/originals/fc/fa/9b/fcfa9b380516309c424f78d486d0bc47.jpg);
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+/* .border { 
+    border: solid;
+    border-color: red;
+} */
+#header { /* fixed header position */
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 24px;
+    background: rgba(112, 251, 232, .9);
+
+    display: flex;
+    flex: wrap;
+    justify-content: center; 
+    align-items: flex-start;
+}
+#logo-title {
+    font-size: 40px;
+}
+#nav-bar {
+    display: inline;
+}
+#nav-bar li {
+    display: inline;
+    margin: 30px;
+    
+}
+.nav-link:not(:hover) {
+    color: #ffffff;
+    text-decoration: none;
+    
+    transition: 1s;
+}
+.nav-link:hover {
+    color: #133AFD;
+    text-decoration: none;
+    transition: 1s;
+}
+/* a:link, a:active, a:visited {
+    color: #ffffff;
+  
+} */
+
+#box-1 {
+    flex: 0;
+        
+}
+#box-2 {
+    flex: 1;
+    margin-left: 10px;
+    
+}
+#box-3 {
+    flex: 1;
+    
+}
+#title-container {
+    display: flex;
+    /* border: solid;
+    border-color: yellow; */
+    height: 18%;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    font-size: 30px;
+
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15%;
+    
+    
+     /* border: solid;
+    border-color: purple; */
+}
+#form {
+    margin-top: 30px;
+}
+
+#details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    background: rgba(112, 251, 232, 0.7);
+    color: #ffffff;
+
+    /*below makes the container centered with the margin l & r being auto */
+    width: 70%;
+    margin-left: auto; 
+    margin-right: auto;
+
+
+    /* border: solid;
+    border-color: orange; */
+}
+#reverse-osmosis {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#fast-shipping {
+    margin-bottom: 50px;
+}
+#location {
+    margin-bottom: 50px;
+}
+#video-container {
+    display: flex;
+    justify-content: center;
+    
+   
+}
+#video {
+    margin-top: 50px;
+}
+@media (min-width: 600px) {
+    #logo-title {
+        font-size: 45px;
+    }
+}
