@@ -3,8 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+h2,
+p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
 main {
     min-height: 100vh;
+    font-family: "poppins", sans-serif;
     background: linear-gradient(to right top, #65dfc9, #6cdbeb);
     display: flex;
     align-items: center;
@@ -21,6 +39,7 @@ main {
     border-radius: 2rem; 
     z-index: 2;
     backdrop-filter: blur(2rem); /* blur items behind glass */
+    display: flex;
 }
 .circle1, 
 .circle2 {
@@ -40,4 +59,45 @@ main {
 .circle2 {
     bottom: 5%;
     left: 10%;
+}
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+
+    background: linear-gradient(to right bottom, /*gradient glass effect 70% top left --> 30% bottom right */
+     rgba(255, 255, 255, 0.7),  
+      rgba(255, 255, 255, 0.3));
+      border-radius: 2rem;
+    
+}
+.link {
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+.link h2{
+    padding: 0rem 2rem;
+}
+.games {
+    flex: 2;
+}
+.pro {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+.pro img {
+    position: absolute;
+    top: -10%;
+}
+.pro h2 {
+    width: 40%;
+    color: white;
 }
