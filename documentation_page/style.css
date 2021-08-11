@@ -4,7 +4,6 @@
 main {
     height: 100%;
     width: 100%;
-    background: gray;
     display: grid;
     grid-template-columns: minmax(300px, auto) 1fr;
     grid-template-areas: "navbar mainContent";
@@ -19,21 +18,38 @@ main {
     background-color: white;
     color: black;
     padding: 10px 0px;
+    border-right: solid;
+    border-color: black;
     
 
-    border: solid;
-    border-color: aquamarine;
+   
 }
 #navbar header {
     text-align: center;
+    margin: 25px;
+    font-size: 1.8em;
+    font-weight: bold;
+
     
 }
 .nav_links ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    list-style-type: none; /*remove bullet points */
+   
 }
 .nav-link {
-    text-decoration: none;
+    text-decoration: none; /*remove underlines*/    
 }
-
+#navbar ul {
+    display: flex;
+    width: 100%;  
+}
+#navbar li {
+    width: 100%;
+    border-top: 1px solid;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px 0px;
+}
