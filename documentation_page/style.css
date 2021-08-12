@@ -4,9 +4,12 @@
 main {
     height: 100%;
     width: 100%;
-    display: grid;
+    /* display: grid;
     grid-template-columns: minmax(300px, auto) 1fr;
-    grid-template-areas: "navbar mainContent";
+    grid-template-areas: "navbar mainContent"; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
 }
 #navbar {
     position: fixed;
@@ -20,17 +23,12 @@ main {
     padding: 10px 0px;
     border-right: solid;
     border-color: black;
-    
-
-   
 }
 #navbar header {
     text-align: center;
     margin: 25px;
     font-size: 1.8em;
     font-weight: bold;
-
-    
 }
 .nav_links ul {
     display: flex;
@@ -52,4 +50,15 @@ main {
     cursor: pointer;
     text-align: center;
     padding: 20px 0px;
+}
+.main-section ul {
+    list-style-type: none;
+    padding-left: 30px;
+    border: 1px solid;
+}
+.main-section h1 {
+    font-size: 30px;
+}
+.main-section p {
+    font-style: italic;
 }
