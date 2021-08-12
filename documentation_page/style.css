@@ -3,13 +3,15 @@
 }
 main {
     height: 100%;
-    width: 100%;
-    /* display: grid;
-    grid-template-columns: minmax(300px, auto) 1fr;
-    grid-template-areas: "navbar mainContent"; */
+    max-width: 100%;      /*max-width: 100% & overflow-x:hidden prevents horizontal scrolling*/
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    margin-left: 25%;
+    margin-left: 20%;
+}
+code {
+    background: gray;
+    color: white;
 }
 #navbar {
     position: fixed;
@@ -22,13 +24,20 @@ main {
     color: black;
     padding: 10px 0px;
     border-right: solid;
-    border-color: black;
+    border-color: black;   
+}
+#apple {
+    position: relative; /*position: relative & top: 18px used to align the logo with the header text*/
+    top: 18px;
 }
 #navbar header {
-    text-align: center;
-    margin: 25px;
+    /* text-align: center; */
+    /* margin: 25px; */
     font-size: 1.8em;
     font-weight: bold;
+    margin-left: 65px;
+    position: relative; /*position: relative & bottom: 45px adds margin to the bottom of the header without moving other items*/
+    bottom: 25px;
 }
 .nav_links ul {
     display: flex;
@@ -38,10 +47,14 @@ main {
    
 }
 .nav-link {
-    text-decoration: none; /*remove underlines*/    
+    text-decoration: none; /*remove underlines*/  
+    color: black;  
+    transition: color .5s;
+}
+.nav-link:hover {
+    color: red;
 }
 #navbar ul {
-    display: flex;
     width: 100%;  
 }
 #navbar li {
@@ -49,16 +62,21 @@ main {
     border-top: 1px solid;
     cursor: pointer;
     text-align: center;
-    padding: 20px 0px;
+    padding: 30px 0px;
 }
 .main-section ul {
     list-style-type: none;
     padding-left: 30px;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
-.main-section h1 {
+.main-section header {
     font-size: 30px;
 }
 .main-section p {
     font-style: italic;
+}
+@media screen and (max-width: 600px) {
+    .main-section {
+        font-size: 12px;
+    }
 }
