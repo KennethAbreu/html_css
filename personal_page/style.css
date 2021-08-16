@@ -50,6 +50,7 @@
     font-size: 85px;
     color: white;
     font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px 1px #1f1f1f;
 }
 #welcome-section p {
     font-size: 25px;
@@ -68,7 +69,7 @@
     font-size: 40px;
     padding: 50px;
     text-decoration: underline #FF4C29;
-
+    text-shadow: 2px 2px 1px #1f1f1f;
     color: white;
 }
 .projects-grid {
@@ -78,14 +79,12 @@
     grid-gap: 40px;
 
 }
-#one {
-    background: blue;
-}
-#two {
-    background: purple;
-}
-#three {
-    background: yellow;
+@media (max-width: 450px) {
+    .projects-grid {
+        grid-template-areas: "project-tile"
+                             "project-tile"
+                             "project-tile";
+    }
 }
 .tile-image { 
     max-width: 100%;
@@ -101,5 +100,45 @@
     /* border: 2px solid #FF4C29; */
     /* text-decoration: underline #FF4C29; */
     font-size: 20px;
+    text-decoration: none;
+    
+}
+.profile-section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
+    background: gray;
+}
+.contact-section-header {
+    font-size: 5rem;
+    color: white;
+    text-shadow: 2px 2px 1px #1f1f1f;
+
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+
+}
+.contact-links {
+    display: flex;
+    flex-wrap: flex;
+    justify-content: center;
+    max-width: 980px;
+    margin-top: 4rem;
+}
+#profile-link {
+    padding: 15px;
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 1px #1f1f1f;
 }
 
