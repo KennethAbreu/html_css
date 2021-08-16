@@ -16,9 +16,6 @@
 
     /* border: 1px solid; */
     background: linear-gradient(to top right, #082032, #1C5C8B);
-    
-
-
 }
 #navbar ul {
     list-style-type: none;
@@ -33,7 +30,7 @@
     font-size: 25px;
     transition: border .7s;
     /* border-bottom: 2px solid transparent; */
-    transition: color .5s;
+    transition: color .7s;
 
 }
 .nav-link:hover {
@@ -47,7 +44,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to top, #2C394B, #334756) ;
+    background: linear-gradient(to bottom left, #2C394B, #334756) ;
 }
 #welcome-section h1 {
     font-size: 85px;
@@ -59,31 +56,27 @@
     color: white;
     font-style: italic;
     
-    
-}
-projects-section {
+    }
+.projects-section {
     height: 100vh;
     margin: 0;
+    background-color: #082032;
+
 }
 .projects-section-header {
     text-align: center;
     font-size: 40px;
     padding: 50px;
     text-decoration: underline #FF4C29;
-    background: #082032;
+
     color: white;
 }
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 80px;
-    background-color: #082032;
     padding: 60px;
-    grid-gap: 50px;
-}
-.project-tile {
-    padding: 100px;
-    text-align: center;
+    grid-gap: 40px;
+
 }
 #one {
     background: blue;
@@ -94,3 +87,19 @@ projects-section {
 #three {
     background: yellow;
 }
+.tile-image { 
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /*removes extra space below image*/
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+.title {
+    color: white;
+    text-align: center;
+    /* border: 2px solid #FF4C29; */
+    /* text-decoration: underline #FF4C29; */
+    font-size: 20px;
+}
+
