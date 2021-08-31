@@ -1,15 +1,14 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Bad Script', cursive;
-
+    font-family: 'Kaisei Tokumin', serif;
 }
 main {
     display: flex;
     justify-content: center;
     height: 100%;
     overflow-y: auto;
-    background: linear-gradient(to right,#ec6f66,#f3a183);
+    background: linear-gradient(to top,#ff9966,#ff5e62);
 }
 .grid-container {
     display: grid;
@@ -24,45 +23,50 @@ main {
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr 1fr; */
     
+    position: fixed;
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background: #ffffff;
     grid-row: 1;
-    width: 100%;
+    width: 90%;
+    height: 10%;
     margin-bottom: 40px;
 
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 .pocket-shop {
     display: flex;
 }
 .nav-bar li{
     display: inline-block;
-    padding: 0px 10px;
+    padding: 0px 20px;
 }
 #pocket-logo {
     align-self: center;
     width: 30px;
     height: auto;
+    padding-left: 15px;
 
 }
 #title h1 {
     font-family: 'Bad Script', cursive;
+    font-size: 25px;
     align-self: center;
     margin-left: 10px;
     margin-right: 35px;
 }
 #featured {
+    margin-top: 12%;
     background: white;
     grid-row: 2 / span 2;
-
 }
 #featured h1 {
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 10px;
 }
 #featured h1:before, 
@@ -92,7 +96,7 @@ main {
     height: 60%;
 }
 #item1, #item2, #item3 {
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
 }
 .image {
     width: 70%;
