@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bad Script', cursive;
+
+}
+main {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    overflow-y: auto;
+    background: linear-gradient(to right,#ec6f66,#f3a183);
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: 100vh;
+    width: 90%;
+}
+.background {
+    background: white;
+}
+#title {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    grid-row: 1;
+    width: 100%;
+    margin-bottom: 40px;
+
+    border: 2px solid blue;
+}
+.pocket-shop {
+    display: flex;
+}
+.nav-bar li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+#pocket-logo {
+    align-self: center;
+    width: 30px;
+    height: auto;
+
+}
+#title h1 {
+    font-family: 'Bad Script', cursive;
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 35px;
+}
+#featured {
+    background: white;
+    grid-row: 2 / span 2;
+
+}
+#featured h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+#featured h1:before, 
+#featured h1:after {
+    content:"";
+    flex: 1 1;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+#items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+    /* border: 2px solid green; */
+}
+.column-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    width: 28%;
+    height: 60%;
+}
+#item1, #item2, #item3 {
+    /* border: 2px solid blue; */
+}
+.image {
+    width: 70%;
+    height: 70%;
+    border-radius: 6px;
+}
+.description {
+    font-size: 15px;
+} 

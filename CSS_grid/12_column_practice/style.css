@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+.grid-container {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    column-gap: 16px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6 , 1fr);
+    /* align-items: center; */
+    /* justify-items: center; */
+
+    /* background: #F0EAD6 */
+    background: linear-gradient(to right,#ec6f66,#f3a183)
+}
+/* .item {
+    border: 2px solid green;
+
+} */
+#pocket {
+    grid-column: 3;
+    grid-row: 3 / span 2;
+    justify-self: end;
+    align-self: center;
+}
+#title {
+    grid-column: 4 / span 2;
+    grid-row: 3 / span 2;
+    align-self: center;
+    justify-self: center;
+    padding: 10px 25px;
+
+    color: white;
+    font-size: 40px;
+    font-family: 'Gochi Hand', cursive;
+
+    /* grid-column-start: 2; */
+    /* grid-column-end: 6; */
+
+    /* alternative code */
+    /* grid-column-start: 2;
+       grid-column-end: span 4;
+
+       grid-column: 2 / span 4; */
+}
+#login-window {
+    background: #ffffff;
+    border-radius: 8px;
+    grid-column: 7 / span 5;
+    grid-row: 2 / span 4;
+    /* grid-column: 6 / span 6; */
+}
+#login-form {
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    row-gap: 10px;
+    height: 100%;
+    width: 80%;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+label {
+    color: gray;
+    font-size: 12px;
+}
+#email-address {
+    grid-row: 4;
+    margin-bottom: 20px;
+}
+#continue {
+    grid-row: 5;
+    justify-self: end;
+    padding: 7px 20px;
+    background: #2589F1;
+    color: white;
+    border-radius: 30px;
+    border: none;
+}
+#account-links {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+#account-links p {
+    text-align: center;
+}
+#account-links ul {
+    list-style-type: none;
+}
+#account-links li {
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 15px 80px;
+}
+#google {
+    display: flex;
+    border: 1px solid lightgray;
+
+}
+#google-logo {
+    width: 20px;
+    height: auto;
+    margin-right: 15px;
+}
+#facebook {
+    display: flex;
+    background: #4F5AB8;
+    color: #ffffff;
+}
+#facebook-logo {
+    width: 20px;
+    height: auto;
+    margin-right: 15px;
+}
+#apple {
+    display: flex;
+    background: black;
+    color: white;
+}
+#apple-logo {
+    width: 20px;
+    height: auto;
+    margin-right: 15px;
+}
+#email-address {
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+}
