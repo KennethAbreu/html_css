@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+#border {
+    border: 2px solid blue;
+}
+.header {
+    border-bottom: 2px solid black;
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: sticky; top: 0; /* sticky navbar */
+}
+.title-name h1 {
+    font-weight: 500;
+    padding: 0;
+}
+.nav-links {
+    display: flex;
+    margin-left: auto;
+    justify-content: space-between;
+}
+.socials {
+    margin-left: auto; /* set socials to right */
+    align-self: center;
+    margin-right: 20px;
+}
+ul {
+    list-style-type: none; /* remove bullet points */
+    align-self: center;
+}
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+a {
+    text-decoration: none; /* remove underline */
+}
