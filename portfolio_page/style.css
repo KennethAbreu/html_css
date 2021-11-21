@@ -97,7 +97,7 @@ a {
     /* card effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 2px 16px; /* not sure the difference with this on */
 }
 .card:hover {
@@ -132,3 +132,27 @@ a {
     align-self: center;
     
   }
+
+
+  /* Active-Projects */
+
+.active-projects {
+    background: black;
+    width: 100%;
+    color: #ffffff;
+}
+.active-projects h1 { /* add some animation to make lively/ active */
+    text-align: center;
+    padding-top: 60px;
+}
+.projects-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 60px;
+}
+.project-card {
+    background: #ffffff;
+    color: black;
+    width: 300px;
+}
