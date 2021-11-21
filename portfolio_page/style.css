@@ -40,7 +40,44 @@ ul li {
 a {
     text-decoration: none; /* remove underline */
     color: black;
-}
+    text-transform: uppercase;
+}  
+/* a:before & a:after - https://codepen.io/adatg/pen/BGLVGL */
+  a:before {
+    content: "[";
+    margin-right: 10px;
+    display: inline-block;
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+  }
+  
+  a:after {
+    content: "]";
+    margin-left: 10px;
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  
+  a:hover:before,
+  a:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  
+  
 .container {
     /* border: 1px solid red; */
     /* background: linear-gradient(to top, #082032, #334756); */
@@ -67,17 +104,19 @@ a {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   .hello {
-      margin-top: 20px;
+      margin-top: 30px;
+      margin-left: 15px;
   }
   .first-last {
       /* color: #810000; */
       font-size: 60px;
       text-align: center;
+      margin-top: 50px;
       
   }
   .description {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 80px;
   }
   .career {
       font-style: italic;
@@ -85,7 +124,7 @@ a {
   .call-button {
     width: 150px;
     padding: 10px;
-    margin-top: 25px;
+    margin-top: 45px;
     border-radius: 0;
     border: 1px solid black;
     background: white;
