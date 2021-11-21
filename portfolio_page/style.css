@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Hind Siliguri', sans-serif;
+    /* font-family: 'Noto Serif', serif; */
+    font-family: 'Inconsolata', monospace;
 }
 #border {
     border: 2px solid blue;
@@ -14,8 +15,10 @@
     position: sticky; top: 0; /* sticky navbar */
 }
 .title-name h1 {
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 50px;
     padding: 0;
+    font-family: 'Caveat', cursive;
 }
 .nav-links {
     display: flex;
@@ -41,22 +44,53 @@ a {
 }
 .container {
     /* border: 1px solid red; */
+    /* background: linear-gradient(to top, #082032, #334756); */
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .card {
-    border: 1px solid black;
-    width: 25%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 30%;
     height: 500px;
     margin-left: 10%;
     /* card effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 2px 16px; /* not sure the difference with this on */
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .hello {
+      margin-top: 20px;
+  }
+  .first-last {
+      /* color: #810000; */
+      font-size: 60px;
+      text-align: center;
+      
+  }
+  .description {
+      text-align: center;
+      margin-top: 30px;
+  }
+  .career {
+      font-style: italic;
+  }
+  .call-button {
+    width: 150px;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 0;
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+    align-self: center;
+    
   }
