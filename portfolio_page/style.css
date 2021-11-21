@@ -7,8 +7,7 @@
     border: 2px solid blue;
 }
 .header {
-    border-bottom: 2px solid black;
-
+    background: white;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -38,4 +37,19 @@ ul li {
 }
 a {
     text-decoration: none; /* remove underline */
+    color: black;
+}
+.container {
+    /* border: 1px solid red; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card {
+    border: 1px solid black;
+    width: 25%;
+    height: 500px;
+    margin-left: 10%;
+
 }
