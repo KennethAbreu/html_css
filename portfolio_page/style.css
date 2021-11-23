@@ -137,24 +137,23 @@ a {
   /* Active-Projects */
 
 .active-projects {
-    background: black;
+    background: linear-gradient(to bottom,#e7e7e7, #989898);
+    /* background: #B1B7C0; */
     width: 100%;
-    color: #ffffff;
 }
 .active-projects h1 { /* add some animation to make lively/ active */
     text-align: center;
     padding-top: 60px;
+    font-size: 50px;
 }
 .project-container {
-    border: 2px solid yellow;
     
     display: flex;
     width: 100%;
     height: auto;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 .project-card {
-    color: white;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -164,31 +163,48 @@ a {
     height: auto;
 }
 .project-image img {
+    border-radius: 20px;
     max-width: 100%;
     max-height: 100%;
 }
 .project-description {
+    background: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-self: center;
-    border: 1px solid blue;
     padding: 0 50px;
-    height: 70%;
+    height: 100%;
+    /* Card Effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.project-description:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.project-description h2 {
+    font-size: 35px;
+}
+.project-description h3 {
+    font-size: 20px;
+    margin-top: 30px;
 }
 .specs ul {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 .view-details {
     border: 1px solid #2D74D7;
-    padding: 10px 20px;
+    padding: 10px 0px;
+    margin-top: 40px;
     border-radius: 20px;
     background: #2D74D7;
     color: white;
     transition: 0.5s;
 }
 .view-details:hover {
-    padding: 15px 30px;
+    background: white;
+    color: #2D74D7;
 
 }
