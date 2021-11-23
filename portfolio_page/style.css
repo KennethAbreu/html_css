@@ -145,14 +145,50 @@ a {
     text-align: center;
     padding-top: 60px;
 }
-.projects-container {
+.project-container {
+    border: 2px solid yellow;
+    
     display: flex;
-    justify-content: space-evenly;
     width: 100%;
+    height: auto;
     margin-top: 60px;
 }
 .project-card {
-    background: #ffffff;
-    color: black;
-    width: 300px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.project-image {
+    width: 700px;
+    height: auto;
+}
+.project-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    border: 1px solid blue;
+    padding: 0 50px;
+    height: 70%;
+}
+.specs ul {
+    display: flex;
+    flex-direction: column;
+}
+.view-details {
+    border: 1px solid #2D74D7;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #2D74D7;
+    color: white;
+    transition: 0.5s;
+}
+.view-details:hover {
+    padding: 15px 30px;
+
 }
