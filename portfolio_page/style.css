@@ -95,14 +95,14 @@ a {
     height: 500px;
     margin-left: 10%;
     /* card effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s; */
     border-radius: 10px;
     padding: 2px 16px; /* not sure the difference with this on */
 }
-.card:hover {
+/* .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+  } */
   .hello {
       margin-top: 30px;
       margin-left: 15px;
@@ -134,20 +134,18 @@ a {
   }
 
 
-  /* Active-Projects */
+  /* Active-Projects */ /* i want to fade these in */
 
 .active-projects {
-    background: linear-gradient(to bottom,#e7e7e7, #989898);
-    /* background: #B1B7C0; */
+    background: linear-gradient(to top right ,#ffffff, #e7e7e7);
     width: 100%;
 }
-.active-projects h1 { /* add some animation to make lively/ active */
+.section-title { /* add some animation to make lively/ active */
     text-align: center;
     padding-top: 60px;
     font-size: 50px;
 }
 .project-container {
-    
     display: flex;
     width: 100%;
     height: auto;
@@ -161,11 +159,19 @@ a {
 .project-image {
     width: 700px;
     height: auto;
+    /* Card Effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.project-image:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .project-image img {
-    border-radius: 20px;
+    height: 100%;
+    width: 100%;
     max-width: 100%;
     max-height: 100%;
+
 }
 .project-description {
     background: white;
@@ -178,9 +184,7 @@ a {
     /* Card Effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-}
-.project-description:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
 }
 .project-description h2 {
     font-size: 35px;
@@ -193,6 +197,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    font-style: italic;
 }
 .view-details {
     border: 1px solid #2D74D7;
@@ -206,5 +211,44 @@ a {
 .view-details:hover {
     background: white;
     color: #2D74D7;
-
 }
+.small-container {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+.small-container h2 {
+    margin-left: 40px;
+    font-size: 30px;
+    font-style: italic;
+}
+
+/* About Me */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.about-contents {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.about-description {
+    width: 25%;
+    align-self: center;
+}
+.image-container {
+    width: 20%;
+    height: auto;
+}
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
